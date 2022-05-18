@@ -1,0 +1,33 @@
+{
+  "name": "jasonc/chain33-rpc",
+  "description": "chain33 区块链 联盟链 平行链 PHP SDK",
+  "license": "MIT",
+  "type": "library",
+  "authors": [
+    {
+      "name": "C.Jason",
+      "email": "chenjxlg@163.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.3",
+    "guzzlehttp/guzzle": "^7.4.0",
+    "illuminate/support": "*",
+    "pimple/pimple": "^3.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Jason\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Jason\\Chain33\\ServiceProvider"
+      ],
+      "aliases": {
+        "Chain33": "Jason\\Chain33"
+      }
+    }
+  }
+}
